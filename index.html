@@ -4,13 +4,27 @@
 <head>
   <meta charset="utf-8">
   <title>TinDog</title>
+<!-- Global site tag (gtag.js) - Google Ads: 10872257625 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10872257625"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);
+}
+  
+gtag('js', new Date());
+
+gtag('config', 'AW-10872257625');
+
+</script>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
 
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
+  <link id="style" rel="stylesheet" href="css/styles1.css">
 
   <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
@@ -51,6 +65,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#cta">Download</a>
             </li>
+            <li class="nav-item">
+              <a onclick="change()" id="theme" class="nav-link" href="#">Dark Theme</a>
+            </li>
           </ul>
 
         </div>
@@ -68,7 +85,7 @@
         </div>
 
         <div class="col-lg-6">
-          <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
+          <img class="title-image" onclick="round()" id="title_image" src="images/iphone6.png" alt="iphone-mockup">
         </div>
 
       </div>
@@ -195,10 +212,11 @@
       <i class="social-icon fab fa-instagram"></i>
       <i class="social-icon fas fa-envelope"></i>
      
+    
     </div>
   </footer>
 
-
+<script src="app.js"></script>
 </body>
 
 </html>
